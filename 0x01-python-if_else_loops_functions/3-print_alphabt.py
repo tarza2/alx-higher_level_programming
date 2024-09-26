@@ -1,3 +1,4 @@
-for a in range(ord('a'), ord('z') + 1):
-    if a != ord('q') and a != ord('e'):
-        print("{:c}".format(a), end='')
+#!/usr/bin/python3
+for i in 'abcdefghijklmnopqrstuvwxyz':
+    if (i != 'e' and i != 'q'):
+        print("{0}".format(i), end="")

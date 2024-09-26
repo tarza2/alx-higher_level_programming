@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 def new_in_list(my_list, idx, element):
-    """Replace an element at specific index without modifying the whole list"""
+    """Return new list with item at position idx set to elelement"""
     if idx < 0 or idx > (len(my_list) - 1):
         return my_list
-
-    copy = [x for x in my_list]
-    copy[idx] = element
-    return copy
+    new_list = [item for item in my_list]
+    new_list[idx] = element
+    return new_list

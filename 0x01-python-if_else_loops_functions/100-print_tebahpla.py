@@ -1,3 +1,8 @@
 #!/usr/bin/python3
-for c in range(ord('z'), ord('a') - 1, -1):
-    print("{:c}".format((c - (ord('a') - ord('A'))) if c % 2 else c), end='')
+i = 0
+for num in range(122, 96, -1):
+    print("{0}".format(chr(num - i)), end="")
+    if i == 0:
+        i = 32
+    else:
+        i = 0

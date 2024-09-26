@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    if sentence == "":
+    "Return the length of a tuple and the first element"
+    if not sentence:
         return (0, None)
-    return (len(sentence), sentence[0])
+    return (len(tuple(sentence)), tuple(sentence)[0])
